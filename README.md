@@ -35,7 +35,7 @@ In this project, we clone a website named “milaap” this is raising funds onl
 
  Check our website at :
  * GitHub- https://github.com/anowar265/sordid-authority-4005
- * vercel: https://milaap-clone.vercel.app/
+ * vercel: https://milaap-peach.vercel.app/
  * Video- https://drive.google.com/file/d/1gF6NNX9P9WuM9MU12xh8-3ZAcOkOrlAV/view?usp=sharing
 
 ![image](https://i.imgur.com/hi5PJOD.png)
