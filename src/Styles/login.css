@@ -1,0 +1,300 @@
+.sign-up-container {
+  padding: 15%;
+  height: 100%;
+  overflow: hidden;
+  background: linear-gradient(90deg, #a33555, #5f2747);
+}
+.user-management-block {
+  background-color: #fff;
+  padding: 10px 0;
+  transform: translateY(-50%);
+  top: 50%;
+  border-radius: 10px;
+  position: center;
+  margin-top: 9%;
+}
+
+.login-details {
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+.login-description {
+  flex-basis: 70%;
+}
+.login-btn {
+  flex-basis: 30%;
+}
+.btn_login {
+  background-color: #9c3353;
+  border-radius: 20px;
+  color: white;
+  width: 90%;
+  height: 33px;
+  border: none;
+  outline: none;
+}
+
+div {
+  display: block;
+}
+.row-main-frame {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  display: flex;
+}
+.row-main-frame > div:nth-child(1) {
+  flex-basis: 25%;
+  margin-left: 2%;
+  border-right: 1px solid gainsboro;
+}
+.row-main-frame > div:nth-child(2) {
+  flex-basis: 65%;
+  margin-right: 5%;
+}
+.left-sider-block {
+  width: 100%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+.row-main-frame .left-sider-block {
+  float: left;
+  box-sizing: border-box;
+  padding: 0 12px;
+  padding: 0 0.75rem;
+  min-height: 1px;
+}
+.user-management_Image {
+  color: #fff;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  margin: auto;
+}
+.center-align {
+  text-align: center;
+  margin-top: 60%;
+}
+.logo-wrapper {
+  background-color: #9c3353;
+  padding: 23px 20px 17px;
+  display: inline-block;
+  margin-bottom: 0;
+  border-radius: 50%;
+}
+.milaap-logo {
+  width: 55px;
+}
+.block-title {
+  color: #542e44;
+  font-size: 16px;
+  font-family: AvenirLTPro-Medium;
+}
+.block-subtitle {
+  color: #9f9f9f;
+  font-size: 12px;
+}
+.user-management__block .user-management_Image:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -100%;
+  width: 2px;
+  height: 420px;
+  background-image: linear-gradient(180deg, #fff, #e0e1e3 47%, #fff);
+}
+
+.right-sider-block {
+  margin-top: 4%;
+  margin-left: 5%;
+  left: auto;
+  right: auto;
+}
+.user-management__block--dynamic.sign-up--dynamic {
+  height: auto;
+  margin-bottom: 50px;
+}
+.user-management__block--dynamic .sign-up-title {
+  font-size: 15px;
+  margin: 10px auto 30px;
+  text-align: center;
+  width: 45%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 1.4;
+}
+
+/* 
+  ======================== */
+
+#register-form {
+  width: 512px;
+  margin: 10vh auto;
+  margin-top: 130px;
+  background-color: white;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  outline: none;
+}
+#register-form form {
+  width: 100%;
+  max-width: 410px;
+  padding: 25px;
+  margin: auto;
+}
+body {
+  background-color: white;
+}
+.form-data {
+  width: 100%;
+  max-width: 410px;
+  padding: 7px;
+  margin-left: -50px;
+}
+.form-control {
+  position: relative;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  border-radius: 0px;
+  width: 400px;
+  height: auto;
+  border-bottom: 1px solid #9e9e9e;
+  margin-bottom: 10px;
+}
+.form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.social-login {
+  width: 390px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+.social-btn {
+  font-weight: 100;
+  color: white;
+  width: 190px;
+  font-size: 0.9rem;
+}
+
+a {
+  display: block;
+  padding-top: 10px;
+  color: lightseagreen;
+}
+
+#logreg-form .lines {
+  width: 200px;
+  border: 1px solid red;
+}
+
+.form-signup button[type="submit"] {
+  margin-top: 10px;
+}
+
+#register-form .facebook-btn {
+  background-color: #3c589c;
+  margin-right: 5px;
+}
+.form-signup {
+  width: 60%;
+  margin: auto;
+  padding: auto;
+}
+
+.form-signup input {
+  margin-bottom: 26px;
+}
+
+.form-signup .social-login {
+  width: 210px !important;
+  margin: 0 auto;
+}
+.block {
+  width: 100%;
+  height: 43px;
+  border: none;
+  outline: none;
+  margin-top: 130px;
+  border-radius: 20px;
+  color: white;
+  background-color: #9c3353;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 500px) {
+  #register-form {
+    width: 300px;
+  }
+
+  #register-form .social-login {
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  #register-form .social-btn {
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: white;
+    width: 200px;
+    height: 56px;
+  }
+  #register-form .social-btn:nth-child(1) {
+    margin-bottom: 5px;
+  }
+  #register-form .social-btn span {
+    display: none;
+  }
+  #register-form .facebook-btn:after {
+    content: "Facebook";
+  }
+
+  #register-form .google-btn:after {
+    content: "Google+";
+  }
+}
+
+.social-container {
+  width: 40%;
+  margin: auto;
+  padding: auto;
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+.social-facebook {
+  flex-basis: 40%;
+  margin: auto;
+  padding: auto;
+}
+.social-google {
+  flex-basis: 40%;
+  margin: auto;
+  padding: auto;
+}
+.btn {
+  width: 100%;
+  border: 1px solid gainsboro;
+  padding: 7px;
+  border-radius: 30px;
+  color: white;
+}
+.facebook-btn {
+  background-color: #3b5998;
+}
+.google-btn {
+  background-color: #dd4b39;
+}

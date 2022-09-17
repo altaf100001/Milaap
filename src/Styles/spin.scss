@@ -1,0 +1,10 @@
+@import "../../global.scss";
+
+.spin {
+  position: inherit;
+  height: 40vh;
+  @include flex($fd: column, $jc: center, $ai: center);
+  p {
+    color: gray;
+  }
+}

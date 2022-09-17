@@ -1,0 +1,15 @@
+
+
+$themeColor: #9c3353;
+$darkThemeColor: #711d36;
+$disabledColor: #d17691;
+
+
+
+
+@mixin flex($fd: row, $jc: space-between, $ai: none) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}

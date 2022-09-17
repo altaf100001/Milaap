@@ -1,0 +1,153 @@
+@import "../../global.scss";
+
+.contentCard {
+  margin-bottom: 120px;
+  gap: 30px;
+
+  @include flex();
+  .leftContent {
+    @include flex($fd: column);
+    // margin-bottom: 25px;
+    height: 360px;
+    .imgDiv {
+      height: 270px;
+      width: 280px;
+      img {
+        height: 200px;
+      }
+    }
+    .fundDetails {
+      @include flex;
+      margin-top: 1rem;
+      .funded {
+        color: $themeColor;
+      }
+    }
+    .lendBtnDisabled {
+      margin-top: 1rem;
+    }
+  }
+  .rightContent {
+    // border: 1px solid red;
+    @include flex($fd: column);
+    height: 400px;
+    line-height: 25px;
+
+    .aboutLend {
+      color: #828282;
+      max-height: 400px;
+      .description {
+        margin-bottom: 10px;
+
+        .readMore {
+          display: inline;
+          color: $themeColor;
+          cursor: pointer;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        .descDetails {
+          font-size: 0.95rem;
+          display: inline;
+          color: #828282;
+        }
+      }
+      div {
+        font-size: 0.9rem;
+        font-weight: 500;
+        @include flex($jc: none, $ai: center);
+
+        h6 {
+          letter-spacing: 1px;
+          word-spacing: 2px;
+          font-weight: 600;
+        }
+      }
+      p {
+        margin-top: 1rem;
+      }
+      h2 {
+        margin-bottom: 1rem;
+        font-weight: 500;
+        font-size: 1.35rem;
+        color: $themeColor;
+        letter-spacing: 1px;
+        &:hover {
+          text-decoration: underline;
+          color: $darkThemeColor;
+          cursor: pointer;
+        }
+      }
+      h6 {
+        font-weight: 500;
+        color: gray;
+      }
+    }
+
+    .lendMoney {
+      width: 260px;
+      @include flex($ai: center);
+      div {
+        .alertLend {
+          // border: 1px solid red;
+        }
+      }
+      button {
+        width: 30px;
+        border-radius: 2px;
+        background-color: rgb(226, 228, 228);
+      }
+      input {
+        width: 110px;
+        height: 24px;
+        border: 1px solid #e4e4e4;
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        &:focus {
+          outline: none;
+        }
+      }
+      .lendBtn {
+        button {
+          width: 100px;
+          height: 40px;
+          background-color: $themeColor;
+          color: white;
+          border-radius: 24px;
+          &:hover {
+            background-color: $darkThemeColor;
+          }
+        }
+      }
+
+      .lendBtnDisabled {
+        button {
+          width: 100px;
+          background-color: $disabledColor;
+          color: white;
+
+          height: 44px;
+          border-radius: 24px;
+        }
+      }
+    }
+  }
+
+  .lendBtn {
+    button {
+      width: 280px;
+      height: 44px;
+      cursor: pointer;
+      background-color: #fff;
+      border: 1px solid $themeColor;
+      border-radius: 24px;
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+          rgba(0, 0, 0, 0.23) 0px 3px 6px;
+      }
+    }
+  }
+}

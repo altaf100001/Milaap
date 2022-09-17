@@ -1,0 +1,17 @@
+.ribbon{
+    -webkit-transform: rotate(-45deg); 
+    -moz-transform: rotate(-45deg); 
+     -ms-transform: rotate(-45deg); 
+      -o-transform: rotate(-45deg); 
+         transform: rotate(-45deg); 
+   border: 25px solid transparent;
+   border-top: 25px solid #757575;
+   position: absolute;
+   bottom: 20px;
+   right: -50px;
+   padding: 0 10px;
+   width: 120px;
+   color: white;
+   font-family: sans-serif;
+   size: 11px;
+}
