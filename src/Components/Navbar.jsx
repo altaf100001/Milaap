@@ -21,6 +21,8 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 
 import Switch from "react-switch";
+import { useDispatch, useSelector } from "react-redux";
+import { getSwitchSuccess } from "../Redux/AppReducer/action";
 
 const textSwitch = {
   display: "flex",
@@ -37,6 +39,15 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [checke, setcheck] = useState(false);
   const navigate = useNavigate();
+  const dispatch = useDispatch()
+  
+
+
+ function handleSwitch(){
+   setcheck(!checke)
+   dispatch(getSwitchSuccess(checke))
+}
+
 
   let activeStyle = {
     backgroundColor: "#9c3353",
@@ -168,7 +179,8 @@ export default function Navbar() {
                   width={75}
                   handleDiameter={31}
                   boxShadow="1px 2px 2px grey"
-                  onChange={() => setcheck(!checke)}
+                  onChange={ handleSwitch}
+                  // onClick={ handleSwitch}
                   checked={checke}
                   onColor={"#9c3353"}
                   offColor={"#9c3353"}

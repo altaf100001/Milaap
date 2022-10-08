@@ -34,7 +34,8 @@ export default function Homepage() {
   let navigate = useNavigate()
   const dispatch = useDispatch()
   const storedata = useSelector((store)=>store.AppReducer.homeData)
-// console.log(storedata)
+  const switchdata = useSelector((store)=>store.AppReducer.switchVal)
+// console.log(switchdata,"aksojhds")
 
 const images = [
   "https://cimages.milaap.org/milaap/image/upload/v1655996033/production/entity_details/milaap_page/524/Desktop_img_2__5__1655996032.jpg",
@@ -164,7 +165,7 @@ React.useEffect(() => {
               display="flex"
          w= {{base:"300px",sm:"350px",md:"400px",lg:"450px",xl:"550px","2xl":""}}
           >
-            
+            {/* switchdata */}
             <Box borderRight="1px solid #bf9db0" height={{base:"60px",sm:"60px",md:"70px",lg:"70px",xl:"70px","2xl":"80px"}} w={"30%"} pl={2} >
             <Text fontSize={{base:"15px",sm:"15px",md:"19px",lg:"20px",xl:"","2xl":""}}> 702,000 +</Text>
                  <Text fontSize={{base:"12px",sm:"12px",md:"16px",lg:"16",xl:"","2xl":""}} >Fundraisers
@@ -173,13 +174,13 @@ React.useEffect(() => {
 
 
             <Box borderRight="1px solid #bf9db0"  height={{base:"60px",sm:"60px",md:"70px",lg:"70px",xl:"70px","2xl":"80px"}} w={"30%"} pl={2} >
-            <Text fontSize={{base:"15px",sm:"15px",md:"19px",lg:"19px",xl:"19px","2xl":""}}>Rs. 2117 Crores +</Text>
+            <Text fontSize={{base:"15px",sm:"15px",md:"19px",lg:"19px",xl:"19px","2xl":""}}>{switchdata ? "$302 Million +": "Rs 2117 Crores +"}</Text>
                  <Text fontSize={{base:"12px",sm:"12px",md:"16px",lg:"16",xl:"16px","2xl":""}} >Raised</Text>
             </Box>
 
 
             <Box   height={{base:"60px",sm:"60px",md:"70px",lg:"70px",xl:"70px","2xl":"80px"}} w={"30%"} pl={2} >
-            <Text fontSize={{base:"15px",sm:"15px",md:"19px",lg:"20px",xl:"20px","2xl":""}}> 84 lakh +</Text>
+            <Text fontSize={{base:"15px",sm:"15px",md:"19px",lg:"20px",xl:"20px","2xl":""}}> {switchdata ? "8.6 Million +": "84 lakh +"}</Text>
                  <Text fontSize={{base:"12px",sm:"12px",md:"16px",lg:"16",xl:"16px","2xl":""}} >Donations</Text>
             </Box>
             

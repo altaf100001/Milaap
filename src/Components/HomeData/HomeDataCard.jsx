@@ -4,9 +4,13 @@ import {Box,Tag,Text,Flex,CircularProgress, Stack,CircularProgressLabel,Image} f
 import "../../Styles/spin.scss";
 import {Link} from "react-router-dom";
 import {useNavigate} from "react-router-dom";
+import { useSelector } from 'react-redux';
 
 
 export const HomeDataCard = ({data}) => {
+
+  const switchdata = useSelector((store)=>store.AppReducer.switchVal)
+ 
 //    console.log(data)
    const navigate = useNavigate()
   //  console.log(data.tax_ribbon[0])
@@ -42,8 +46,12 @@ export const HomeDataCard = ({data}) => {
              </CircularProgress>
              <Stack textAlign="left" ml="10px">
             <Text fontSize="xs">Raised</Text>
+          
+            {/* // {switchdata ? "$302 Million +": "Rs 2117 Crores +"}*/}
+
             <Text fontSize="md" fontWeight="500">
               {data.raised_amount}
+              {/* {switchdata ? "$302 Million +": "Rs 2117 Crores +"} */}
             </Text>
           </Stack>
           <Stack

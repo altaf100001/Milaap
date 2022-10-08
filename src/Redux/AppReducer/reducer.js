@@ -6,6 +6,7 @@ const initialState = {
   homeData: [],
   isLoading: false,
   isError: false,
+  switchVal:true,
 };
 export const reducer = (state = initialState, action) => {
   const { type, payload } = action;
@@ -67,6 +68,11 @@ export const reducer = (state = initialState, action) => {
         ...state,
         isLoading: false,
         isError: true,
+      };
+    case types.GET_SWITCH_DATA_SUCCESS:
+      return {
+        ...state,
+        switchVal:payload
       };
     default:
       return state;

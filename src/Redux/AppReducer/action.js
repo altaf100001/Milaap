@@ -23,6 +23,17 @@ export const getlendDataSuccess = (payload) => {
   };
 };
 
+
+// switch
+export const getSwitchSuccess = (payload) => {
+  return {
+    type: types.GET_SWITCH_DATA_SUCCESS,
+    payload,
+  };
+};
+////
+
+
 export const getLendData = () => (dispatch) => {
   dispatch(getlendDataRequest());
   axios
